@@ -14,6 +14,7 @@ Clone and use project for Scala apps.
 | sbt-scoverage   | 1.0.4   |
 | sbt-scalariform | 1.3.0   |
 | sbt-scalastyle  | 0.7.0   |
+| sbt-idea		  | 1.6.0   |
 
 
 #### Default libraries

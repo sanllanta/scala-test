@@ -13,6 +13,7 @@ Clone and use project for Scala apps.
 | sbt-release     | 0.8.5   |
 | sbt-scoverage   | 1.0.4   |
 | sbt-scalariform | 1.3.0   |
+| sbt-scalastyle  | 0.7.0   |
 
 
 #### Default libraries
@@ -24,5 +25,6 @@ Clone and use project for Scala apps.
 | scala-logging | 3.1.0   |
 | ficus         | 1.1.2   |
 | scalatest     | 2.2.4   |
-
-
+| spray         | 1.3.3   |
+| spray testkit | 1.3.3   |
+| json4s        | 3.2.11  |

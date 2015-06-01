@@ -13,14 +13,22 @@ name := "scala-base-project"
 scalaVersion := "2.11.6"
 
 resolvers ++= Seq(
-  "releases" at "http://oss.sonatype.org/content/repositories/releases"
+  "Sonatype releases" at "http://oss.sonatype.org/content/repositories/releases",
+  "Sonatype snapshots" at "http://oss.sonatype.org/content/repositories/snapshots",
+  "Spray repository" at "http://repo.spray.io/"
 )
 
 libraryDependencies ++= Seq(
   "com.chuusai"                 %%  "shapeless"                 % "2.1.0" withSources() withJavadoc(),
-  "org.scalaz"                  %%  "scalaz-core"               % "7.1.1" withSources() withJavadoc(),
   "com.typesafe.scala-logging"  %%  "scala-logging"             % "3.1.0" withSources() withJavadoc(),
+  "io.spray"                    %%  "spray-can"                 % "1.3.3" withSources() withJavadoc(),
+  "io.spray"                    %%  "spray-routing"             % "1.3.3" withSources() withJavadoc(),
+  "org.json4s"                  %%  "json4s-ext"                % "3.2.11" withSources() withJavadoc(),
+  "org.json4s"                  %%  "json4s-jackson"            % "3.2.11" withSources() withJavadoc(),
+  "org.json4s"                  %%  "json4s-native"             % "3.2.11" withSources() withJavadoc(),
+  "org.scalaz"                  %%  "scalaz-core"               % "7.1.1" withSources() withJavadoc(),
   "net.ceedubs"                 %%  "ficus"                     % "1.1.2" withSources() withJavadoc(),
+  "io.spray"                    %%  "spray-testkit"             % "1.3.3" % "test",
   "org.scalatest"               %   "scalatest_2.11"            % "2.2.4" % "test"
 )
 
